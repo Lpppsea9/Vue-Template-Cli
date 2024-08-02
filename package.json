@@ -1,0 +1,34 @@
+{
+  "name": "vue-template-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
+    "build2": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "simple-git": "^3.25.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@inquirer/prompts": "^5.3.6",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/fs-extra": "^11.0.4",
+    "chalk": "4",
+    "fs-extra": "^11.2.0",
+    "progress-estimator": "^0.3.1",
+    "rollup": "^4.19.1",
+    "rollup-plugin-node-externals": "^5.1.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.3"
+  }
+}
