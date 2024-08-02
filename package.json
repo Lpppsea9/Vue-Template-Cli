@@ -2,7 +2,7 @@
   "name": "mit-cli",
   "version": "0.0.1",
   "description": "mit-cli 自定义Vue脚手架",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
