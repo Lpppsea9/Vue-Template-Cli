@@ -13,8 +13,15 @@ program
 	.description("create a new program!")
 	.argument("[name]", "项目名称")
 	.action(async (dirName) => {
-		console.log(`create ${dirName}`);
 		create(dirName);
 	});
 
-program.parse();
+try {
+	program.parse();
+} catch (error) {
+	// if (error instanceof ExitPromptError) {
+	console.log("用户强制关闭了提示。");
+	// } else {
+	// console.error("发生了其他错误：", error);
+	// }
+}

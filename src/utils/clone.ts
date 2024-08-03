@@ -1,6 +1,7 @@
 import { simpleGit, SimpleGit, SimpleGitOptions } from "simple-git";
 import createLogger from "progress-estimator"; //展示进度条
 import chalk from "chalk";
+import log from "./log";
 
 const logger = createLogger({
 	spinner: {
@@ -34,10 +35,10 @@ export const clone = async (
 		console.log(chalk.blueBright(`===================================`));
 		console.log();
 
-		// log.success(`项目创建成功 ${chalk.blueBright(prjName)}`);
-		// log.success(`执行以下命令启动项目：`);
-		// log.info(`cd ${chalk.blueBright(prjName)}`);
-		// log.info(`${chalk.yellow("pnpm")} install`);
-		// log.info(`${chalk.yellow("pnpm")} run dev`);
+		log.success(`项目创建成功 ${chalk.blueBright(prjName)}`);
+		log.success(`执行以下命令启动项目：`);
+		log.info(`cd ${chalk.blueBright(prjName)}`);
+		log.info(`${chalk.yellow("pnpm")} install`);
+		log.info(`${chalk.yellow("pnpm")} run dev`);
 	} catch (error) {}
 };

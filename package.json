@@ -26,6 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",
+    "lodash": "^4.17.21",
     "simple-git": "^3.25.0",
     "typescript": "^5.5.4"
   },
@@ -36,8 +37,11 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@types/fs-extra": "^11.0.4",
+    "@types/lodash": "^4.17.7",
+    "axios": "^1.7.3",
     "chalk": "4",
     "fs-extra": "^11.2.0",
+    "log-symbols": "^6.0.0",
     "progress-estimator": "^0.3.1",
     "rollup": "^4.19.1",
     "rollup-plugin-node-externals": "^5.1.3",
