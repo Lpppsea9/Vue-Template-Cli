@@ -71,13 +71,16 @@ export const getNpmInfo = async (npmName: string) => {
 // 获取Npm最新版本
 export const getNpmLatestVersion = async (name: string) => {
 	const { data } = (await getNpmInfo(name)) as AxiosResponse;
-	console.log("ddd", data);
+	// console.log("ddd", data);
 	return data["dist-tags"].latest;
 };
 
 // 比较本地Npm包和线上包的版本
 export const checkNpmVersion = async (name: string, version: string) => {
 	const latestVersion = await getNpmLatestVersion(name);
+	console.log("最新", latestVersion);
+	console.log("version", version);
+
 	// 是否需要更新
 	const isNeedUpdate = gt(latestVersion, version);
 	console.log("是否", isNeedUpdate);
