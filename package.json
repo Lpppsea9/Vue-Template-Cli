@@ -1,6 +1,6 @@
 {
   "name": "mit-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mit-cli 自定义Vue脚手架",
   "main": "dist/index.js",
   "scripts": {
